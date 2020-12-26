@@ -4,5 +4,5 @@ plugins {
 
 apply plugin: 'java'
 application {
-		mainClassName = 'Foo'
+		mainClassName = 'Main'
 }
