@@ -1,8 +1,16 @@
 plugins {
-	id 'application'
+    id 'java'
 }
 
-apply plugin: 'java'
-application {
-		mainClassName = 'Main'
+repositories {
+    mavenCentral()
 }
+
+dependencies {
+    implementation 'org.testng:testng:7.3.0'
+}
+
+test {
+    useTestNG()
+}
+
